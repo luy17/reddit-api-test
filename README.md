@@ -1,4 +1,4 @@
-## TransPerfect Assessment
+## Assessment
 
 # How to install and run:
 1. Download the files
