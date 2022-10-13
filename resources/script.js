@@ -1,6 +1,5 @@
 //Initializing variables
 var next = 'x';
-var content = document.getElementById("reddit-list-container");
 
 function getAww(after){
 
@@ -9,7 +8,7 @@ function getAww(after){
     //If this wasn't the first time getting data, then load data after the name. 
     apiUrl = `https://www.reddit.com/r/aww/hot.json?after=${next}`
   }
-  //console.log(apiUrl);
+  
   fetch(`${apiUrl}`)
     .then(function(res) {
       //Convert the data into JSON
@@ -36,7 +35,7 @@ function addPosts(response, after){
   
   //gets the posts then prints them out into the console.
   posts = response.data.children;
-  console.log(posts);
+  
 
   //for each Post, add them to a div in order to append them into the reddit-list-container
   posts.forEach(post => {
@@ -54,14 +53,13 @@ function addPosts(response, after){
 
 $(document).ready(function(){
   getAww(next);
-  //console.log(response);
 
   window.addEventListener('scroll',()=>{
     //console.log(window.scrollY) //scrolled from top
     //console.log(window.innerHeight) //visible part of screen
     if(window.scrollY + window.innerHeight >= 
     document.documentElement.scrollHeight){
-      console.log(next);
+      //console.log(next);
       getAww(next);
     }
   });
