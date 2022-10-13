@@ -1,0 +1,54 @@
+/*General Tag CSS*/
+h1{
+  text-align: center;
+  color: #F1FAEE;
+}
+
+h1 a{
+  color: #F1FAEE;
+  text-decoration: none;
+}
+
+body{
+  background-color: #E09891;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+}
+header{
+  margin: 0px;
+  padding: 10px;
+  background-color: #457B9D;
+}
+
+/*Container that holds Reddit posts CSS*/
+#reddit-list-container{
+  width: 95%;
+  margin: 0 auto;
+  background-color: #E09891;
+  padding: 10px;
+}
+
+/*Posts CSS*/
+.reddit-list-item{
+  margin: 15px;
+  padding: 20px;
+  background-color: #F1FAEE;
+  display: flex;
+  border-radius: 20px;
+}
+
+.reddit-list-item a{
+  font-size: 24px;
+  color: #457B9D;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reddit-list-item img{
+  display: inline;
+  border: 8px solid #FFAD05;
+  margin-right: 20px;
+  border-radius: 20px;
+}
