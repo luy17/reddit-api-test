@@ -6,4 +6,4 @@
 3. Installation and Running is all done now. 
 
 or feel free not to download the files and visit:
-<a href="https://luy17.github.io/reddit-api-test/" target="_blank">https://luy17.github.io/reddit-api-test/</a>
+https://luy17.github.io/reddit-api-test/
